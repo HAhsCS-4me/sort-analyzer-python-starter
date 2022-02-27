@@ -37,7 +37,7 @@ print(fewUniqueData[0:50])
 # print(f"Bubble Sort Random Data: {endTime - startTime} seconds")
 
 
-# Bubble Sort Function for Random Array
+# Bubble Sort Function
 def bubbleSort(anArray):
 	for numComparison in range(len(anArray) - 1, 0 , -1):
 		for i in range(numComparison):
@@ -45,7 +45,7 @@ def bubbleSort(anArray):
 				anArray[i], anArray[i + 1] = anArray[i + 1], anArray[i]
 	print(anArray)	
 
-# Selection Sort Function for Random Array
+# Selection Sort Function
 def selectionSort(anArray):
 	for i in range(len(anArray) - 1):
 		minPosition = i
@@ -54,13 +54,12 @@ def selectionSort(anArray):
 				anArray[minPosition], anArray[i] = anArray[i], anArray[minPosition]
 	print(anArray)
 
-# Insertion Sort Function for Random Array
+# Insertion Sort Function
 def insertionSort(anArray):
     for i in range(1, len(anArray)):
         insertVal = anArray[i] 
         insertPos = i
         
-        # needs to have insertPos because the position needs to change every time
         while insertPos >= 1 and anArray[insertPos - 1] > insertVal: 
             anArray[insertPos] = anArray[insertPos - 1]
             insertPos -= 1
@@ -70,23 +69,14 @@ def insertionSort(anArray):
     print(anArray)
 
 
-# Bubble Sort Function for Reversed Array
+# Output for Bubble, Selection, Insertion Sort for Random Data
+startTime = time.time()
+bubbleSort(randomData)
+endTime = time.time()
+print(f"Bubble Sort Random Data: {endTime - startTime} seconds")
 
-# Selection Sort Function for Reversed Array
+# Output for Bubble, Selection, Insertion Sort for Reversed Data
 
-# Insertion Sort Function for Reversed Array
+# Output for Bubble, Selection, Insertion Sort for Nearly Sorted Data
 
-
-# Bubble Sort Function for Nearly Sorted Array
-
-# Selection Sort Function for Nearly Sorted Array
-
-# Insertion Sort Function for Nearly Sorted Array
-
-
-# Bubble Sort Function for Few Unique Array
-
-# Selection Sort Function for Few Unique Array
-
-# Insertion Sort Function for Few Unique Array
-
+# Output for Bubble, Selection, Insertion Sort for Few Unique Data
