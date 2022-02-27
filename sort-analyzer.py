@@ -38,10 +38,36 @@ print(fewUniqueData[0:50])
 
 
 # Bubble Sort Function for Random Array
+def bubbleSort(anArray):
+	for numComparison in range(len(anArray) - 1, 0 , -1):
+		for i in range(numComparison):
+			if anArray[i] > anArray[i + 1]:
+				anArray[i], anArray[i + 1] = anArray[i + 1], anArray[i]
+	print(anArray)	
 
 # Selection Sort Function for Random Array
+def selectionSort(anArray):
+	for i in range(len(anArray) - 1):
+		minPosition = i
+		for i in range(i + 1, len(anArray)):
+			if anArray[i] < anArray[minPosition]:
+				anArray[minPosition], anArray[i] = anArray[i], anArray[minPosition]
+	print(anArray)
 
 # Insertion Sort Function for Random Array
+def insertionSort(anArray):
+    for i in range(1, len(anArray)):
+        insertVal = anArray[i] 
+        insertPos = i
+        
+        # needs to have insertPos because the position needs to change every time
+        while insertPos >= 1 and anArray[insertPos - 1] > insertVal: 
+            anArray[insertPos] = anArray[insertPos - 1]
+            insertPos -= 1
+        
+        anArray[insertPos] = insertVal
+    
+    print(anArray)
 
 
 # Bubble Sort Function for Reversed Array
