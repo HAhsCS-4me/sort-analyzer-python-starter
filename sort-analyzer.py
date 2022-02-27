@@ -35,3 +35,32 @@ print(fewUniqueData[0:50])
 # bubbleSort(randomData)
 # endTime = time.time()
 # print(f"Bubble Sort Random Data: {endTime - startTime} seconds")
+
+
+# Bubble Sort Function for Random Array
+
+# Selection Sort Function for Random Array
+
+# Insertion Sort Function for Random Array
+
+
+# Bubble Sort Function for Reversed Array
+
+# Selection Sort Function for Reversed Array
+
+# Insertion Sort Function for Reversed Array
+
+
+# Bubble Sort Function for Nearly Sorted Array
+
+# Selection Sort Function for Nearly Sorted Array
+
+# Insertion Sort Function for Nearly Sorted Array
+
+
+# Bubble Sort Function for Few Unique Array
+
+# Selection Sort Function for Few Unique Array
+
+# Insertion Sort Function for Few Unique Array
+
