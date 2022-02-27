@@ -59,13 +59,10 @@ def insertionSort(anArray):
     for i in range(1, len(anArray)):
         insertVal = anArray[i] 
         insertPos = i
-        
         while insertPos >= 1 and anArray[insertPos - 1] > insertVal: 
             anArray[insertPos] = anArray[insertPos - 1]
             insertPos -= 1
-        
         anArray[insertPos] = insertVal
-    
     print(anArray)
 
 
