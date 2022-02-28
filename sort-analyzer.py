@@ -70,22 +70,22 @@ def insertionSort(anArray):
 startTime = time.time()
 selectionSort(randomData)
 endTime = time.time()
-print(f"Bubble Sort Random Data: {endTime - startTime} seconds")
+print(f"Sort Random Data: {endTime - startTime} seconds")
 
 # Output for Bubble, Selection, Insertion Sort for Reversed Data
 '''startTime = time.time()
 selectionSort(reversedData)
 endTime = time.time()
-print(f"Bubble Sort Reversed Data: {endTime - startTime} seconds")'''
+print(f"Sort Reversed Data: {endTime - startTime} seconds")'''
 
 # Output for Bubble, Selection, Insertion Sort for Nearly Sorted Data
 '''startTime = time.time()
 selectionSort(nearlySortedData)
 endTime = time.time()
-print(f"Bubble Sort Nearly Sorted Data: {endTime - startTime} seconds")'''
+print(f"Sort Nearly Sorted Data: {endTime - startTime} seconds")'''
 
 # Output for Bubble, Selection, Insertion Sort for Few Unique Data
 '''startTime = time.time()
 selectionSort(fewUniqueData)
 endTime = time.time()
-print(f"Bubble Sort Few Unique Data: {endTime - startTime} seconds")'''
+print(f"Sort Few Unique Data: {endTime - startTime} seconds")'''
