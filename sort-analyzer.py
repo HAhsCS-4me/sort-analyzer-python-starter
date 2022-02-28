@@ -24,10 +24,10 @@ nearlySortedData = loadDataArray("data-files/nearly-sorted-values.txt")
 fewUniqueData = loadDataArray("data-files/few-unique-values.txt")
 
 # VERIFY LOADED DATA BY PRINTING FIRST 50 ELEMENTS
-print(randomData[0:50])
-print(reversedData[0:50])
-print(nearlySortedData[0:50])
-print(fewUniqueData[0:50])
+# print(randomData[0:50])
+# print(reversedData[0:50])
+# print(nearlySortedData[0:50])
+# print(fewUniqueData[0:50])
 
 
 # EXAMPLE OF HOW TO TIME DURATION OF A SORT ALGORITHM
@@ -43,16 +43,15 @@ def bubbleSort(anArray):
 		for i in range(numComparison):
 			if anArray[i] > anArray[i + 1]:
 				anArray[i], anArray[i + 1] = anArray[i + 1], anArray[i]
-	print(anArray)	
 
 # Selection Sort Function
 def selectionSort(anArray):
-	for i in range(len(anArray) - 1):
-		minPosition = i
-		for i in range(i + 1, len(anArray)):
-			if anArray[i] < anArray[minPosition]:
-				anArray[minPosition], anArray[i] = anArray[i], anArray[minPosition]
-	print(anArray)
+    for i in range(len(anArray) - 1):
+        minPosition = i
+        for j in range(i + 1, len(anArray)):
+            if anArray[j] < anArray[minPosition]:
+                minPosition = j 
+        anArray[minPosition], anArray[i] = anArray[i], anArray[minPosition]
 
 # Insertion Sort Function
 def insertionSort(anArray):
@@ -63,29 +62,28 @@ def insertionSort(anArray):
             anArray[insertPos] = anArray[insertPos - 1]
             insertPos -= 1
         anArray[insertPos] = insertVal
-    print(anArray)
 
 
 # Output for Bubble, Selection, Insertion Sort for Random Data
-'''startTime = time.time()
-insertionSort(randomData)
+startTime = time.time()
+selectionSort(randomData)
 endTime = time.time()
-print(f"Sort Random Data: {endTime - startTime} seconds")'''
+print(f"Sort Random Data: {endTime - startTime} seconds")
 
 # Output for Bubble, Selection, Insertion Sort for Reversed Data
 '''startTime = time.time()
-insertionSort(reversedData)
+selectionSort(reversedData)
 endTime = time.time()
 print(f"Sort Reversed Data: {endTime - startTime} seconds")'''
 
 # Output for Bubble, Selection, Insertion Sort for Nearly Sorted Data
 '''startTime = time.time()
-insertionSort(nearlySortedData)
+selectionSort(nearlySortedData)
 endTime = time.time()
 print(f"Sort Nearly Sorted Data: {endTime - startTime} seconds")'''
 
 # Output for Bubble, Selection, Insertion Sort for Few Unique Data
 '''startTime = time.time()
-insertionSort(fewUniqueData)
+selectionSort(fewUniqueData)
 endTime = time.time()
 print(f"Sort Few Unique Data: {endTime - startTime} seconds")'''
