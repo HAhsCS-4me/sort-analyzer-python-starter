@@ -67,10 +67,10 @@ def insertionSort(anArray):
 
 
 # Output for Bubble, Selection, Insertion Sort for Random Data
-startTime = time.time()
+'''startTime = time.time()
 insertionSort(randomData)
 endTime = time.time()
-print(f"Sort Random Data: {endTime - startTime} seconds")
+print(f"Sort Random Data: {endTime - startTime} seconds")'''
 
 # Output for Bubble, Selection, Insertion Sort for Reversed Data
 '''startTime = time.time()
