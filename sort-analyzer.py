@@ -46,7 +46,7 @@ def bubbleSort(anArray):
 
 # Selection Sort Function
 def selectionSort(anArray):
-    for i in range(len(anArray) - 2):
+    for i in range(len(anArray) - 1):
         minPosition = i
         for j in range(i + 1, len(anArray)):
             if anArray[j] < anArray[minPosition]:
@@ -65,10 +65,10 @@ def insertionSort(anArray):
 
 
 # Output for Bubble, Selection, Insertion Sort for Random Data
-startTime = time.time()
+'''startTime = time.time()
 selectionSort(randomData)
 endTime = time.time()
-print(f"Sort Random Data: {endTime - startTime} seconds")
+print(f"Sort Random Data: {endTime - startTime} seconds")'''
 
 # Output for Bubble, Selection, Insertion Sort for Reversed Data
 '''startTime = time.time()
